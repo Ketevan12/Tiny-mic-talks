@@ -1,9 +1,25 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Anton', sans-serif;
+   color: blue;
+  
+
 }
 
+#material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+   
+  }
+  
 #intro-container {
     text-align: center;
     padding: 100px;
@@ -14,4 +30,12 @@ body {
     display: none; /* Hide the map initially */
     width: 100%;
     height: 100vh;
+}
+#background-container {
+    background-image: url('/Users/keti/Sites/instagram/Tiny-mic-talks/Tiny-mic-talks/c.pu.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    width: 100%;
+    height: 100vh;
+    /* You can set other styles for this container here */
 }
