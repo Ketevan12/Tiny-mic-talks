@@ -19,23 +19,7 @@ body {
     'opsz' 24
    
   }
-  
-#intro-container {
-    text-align: center;
-    padding: 100px;
-    background-color: #f0f0f0;
-}
 
-#map-container {
-    display: none; /* Hide the map initially */
-    width: 100%;
-    height: 100vh;
-}
-#background-container {
-    background-image: url('/Users/keti/Sites/instagram/Tiny-mic-talks/Tiny-mic-talks/c.pu.jpg');
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    width: 100%;
-    height: 100vh;
-    /* You can set other styles for this container here */
+p {
+    background-image: ('c.pu.jpg');
 }
