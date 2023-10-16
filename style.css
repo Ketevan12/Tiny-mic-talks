@@ -1,26 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-body {
-  background-image: ("c.pu Small.png");
-    margin: 0;
-    padding: 0;
-    font-family: 'Anton', sans-serif;
-   color: blue;
-   text-size-adjust: 100px;
-  
-
-}
-
-#material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-   
-  }
 
   body {
     background-image: url('c.pu.jpg');
@@ -28,8 +9,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
-  padding: 0;
-  font-family: 'Anton', sans-serif;
+  padding: 1000;
+  font-family: 'Bebas Neue', sans-serif;
   color: blue;
+  font-size: 5vw;
+  text-align: center; 
+
   }
-  
+  .custom {
+    cursor: url('karaoke-svgrepo-com.svg'), auto;
+}
