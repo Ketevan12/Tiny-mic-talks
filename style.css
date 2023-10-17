@@ -276,15 +276,9 @@ body {
       box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
   }
 }
-
-/* For webkit-based browsers (Chrome) */
-#h10-webkit {
-  font-size: 35px;
-  -webkit-text-stroke: 2px black; /* 2px double black outline */
-}
-
-/* For Mozilla-based browsers (Firefox) */
-#h10-mozilla {
-  font-size: 35px;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Double black outline */
+#h10{
+  font-size: 40px;
+  font-weight: 200;
+  font-optical-sizing: 100px;
+ 
 }
