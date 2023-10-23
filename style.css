@@ -1,7 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
+@import url("https://use.typekit.net/lwe2khs.css");
 
 body {
   background-image: url('c.pu.jpg');
@@ -10,275 +7,47 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "interstate-condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
   color: blue;
   font-size: 5vw;
   text-align: center;
 }
-
-/* Define a function for generating random numbers */
-@function random($min, $max) {
-  @return floor(random() * ($max - $min + 1) + $min);
-}
-
-/* Usage of the random function */
-.custom {
-  cursor: url('karaoke-svgrepo-com.svg'), auto;
-  /* For example, use the random function to generate a random font-size between 10px and 30px */
-  font-size: random(10, 30)px;
-}
-@font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+.flash {
+  font-size: 230px;
+  animation: flash 2s infinite alternate;
+  text-align: center; /* Center horizontally */
+  position: fixed;
+line-height: 90%;  top: 25%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center vertically and horizontally */
 }
 
 
-
-.sign {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: relative;
-  width:  10;
-  height: 10;
-  background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #6b1839,
-    transparent
-  );
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 50%;
-  font-family: "Clip";
-  text-transform: uppercase;
-  font-size: 2em;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
-}
-.ok {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: relative;
-  width:  10;
-  height: 10;
-  background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #6b1839,
-    transparent
-  );
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 55%;
-  top: 60%;
-  font-family: "Clip";
-  text-transform: uppercase;
-  font-size: 2em;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
-}
-@keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  }
-  28%,
-  33% {
-    color: #ff65bd;
-    text-shadow: none;
-  }
-  82%,
-  97% {
-    color: #ff2483;
-    text-shadow: none;
-  }
-}
-
-.flicker {
-  animation: shine 2s forwards, blink 3s 2s infinite;
-}
-
-.fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
-}
-
-@keyframes shine {
-  0% {
-    color: #6b1839;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  }
-}
-
-@keyframes flicker {
+@keyframes flash {
   from {
-    opacity: 1;
+    color: Chartreuse;
   }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  11% {
-    opacity: 0.922;
-  }
-
-  12% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  17% {
-    opacity: 0.9;
-  }
-
-  19% {
-    opacity: 0.93;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: 0.94;
-  }
-
-  28% {
-    opacity: 0.98;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.5;
-  }
-
-  39% {
-    opacity: 0.96;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: 0.97;
-  }
-
-  46% {
-    opacity: 0.94;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  58% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  93% {
-    opacity: 0.93;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  97% {
-    opacity: 0.93;
-  }
-
   to {
-    opacity: 1;
+    color: yellow;
+  }
+  to {
+    color: red;
   }
 }
-/* Add this CSS to your style.css */
-#intro-container {
-  position: absolute;
+
+/* Remove underline for anchor elements */
+a {
+  text-decoration: none;
+}
+
+.h10 {
+  line-height: 90%;
+  font-size: 130%;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional background color */
- 
-}
-
-#intro-container p {
-  font-size: 24px; /* Adjust the font size as needed */
-  text-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Add a text shadow with a blue color */
-}
-
-@keyframes glow {
-  0% {
-      box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
-  }
-  100% {
-      box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
-  }
-}
-#h10{
-  font-size: 40px;
-  font-weight: 200;
-  font-optical-sizing: 100px;
- 
+  text-align: center; /* To center the content horizontally */
+  width: 100%; /* Make it full-width */
+  padding: 10px; /* Add some padding for spacing */
 }
