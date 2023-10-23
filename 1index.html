@@ -13,10 +13,9 @@
             background-attachment: fixed;
             background-position: center center;
             height: 100vh;
-            position: relative; /* Position relative for overlay */
+            position: relative;
         }
 
-        /* Create a blue overlay */
         body::before {
             content: "";
             position: absolute;
@@ -24,42 +23,40 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgb(47, 108, 0);
-            opacity: 0.5; /* Adjust opacity as needed */
+            background-color: rgba(47, 108, 0, 0.5); /* Use rgba to control opacity */
         }
 
         #star-container {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Center the container */
+            transform: translate(-50%, -50%);
         }
 
         .star {
             position: relative;
             display: inline-block;
-            width: 0;
-            height: 0;
-            border-left: 14px solid transparent;
-            border-right: 13px solid transparent;
-            border-bottom: 3px solid transparent; /* Make the background transparent */
-            background-image: url('map.png'); /* Use the same image as the background */
+            width: 40px; /* Set width and height for the star */
+            height: 40px;
+            background-image: url('map.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            height: 15px;
-            top: -100px;
-            left: 118px;
-            background-position: center center; /* Align with the background image */
-            animation: glow 1s ease-in-out infinite alternate; /* Add glow effect */
-            filter: blur(5px); /* Apply a 5px blur effect */
-            background-color: red; /* Change the star glow color to red */
+            background-position: center center;
+            animation: glow 1s ease-in-out infinite alternate;
+            filter: blur(5px);
+            background-color: red;
         }
+
+        /* Adjust the positioning of the star */
         .star a {
-            width: 40px; /* Set width and height to cover the star area */
-            height: 40px;
             display: block;
+            width: 100%;
+            height: 100%;
             position: absolute;
+            top: 50%; /* Adjust the star's position relative to its container */
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         @keyframes glow {
