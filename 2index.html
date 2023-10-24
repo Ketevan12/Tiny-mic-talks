@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tiny Mic Talks</title>
+    <style>
+        @import url("https://use.typekit.net/lwe2khs.css");
+        body {
+            font-family: "interstate-condensed", sans-serif;
+            font-weight: 800;
+            background-image: url('c.pu.jpg');
+         background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            position: relative;
+        }
+
+        body::before {
+            position: absolute;
+            background-image: url('c.pu.jpg');
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(47, 108, 0, 0.5);
+        }
+
+        #header-container {
+            display: flex;
+            align-items: center; /* Align content to the center vertically */
+            justify-content: space-between; /* Add space between elements */
+            padding: 20px;
+            height: 100%;
+        }
+
+        .cot {
+            font-size: 244%;
+            text-align: left; /* Align text to the left */
+            color: white;
+            animation: text-flash 2s linear infinite;
+        }
+
+        .co {
+            font-size: 434%;
+            text-align: center; /* Align text to the center */
+            color: white;
+            margin: 0;
+            transition: background-color 0.5s;
+            animation: text-flash-white 5s linear infinite;
+        }
+
+        .co2 {
+            text-align: center; /* Align text to the center */
+        }
+
+        @keyframes text-flash {
+            0% { color: red; }
+        50% { color: green; }
+            100% { color: brown; }
+            155% { color: yellow; }
+            200% { color: blue; }
+        }
+
+        @keyframes text-flash-white {
+            0% { color: rgb(255, 255, 255); outline: black; }
+            25% { color: white; }
+            50% { color: rgb(255, 255, 255); }
+            75% { color: white; }
+            100% { color: rgb(255, 255, 255); }
+        }
+
+        .cot:hover {
+           
+        }
+
+        .co2:hover {
+            background-color: rgba(0, 0, 255, 0.8);
+        }
+
+        .co3:hover {
+            background-color: rgba(0, 128, 0, 0.8);
+        }
+
+        .co4:hover {
+            background-color: rgba(139, 69, 19, 0.8);
+        }
+
+        .co5:hover {
+            background-color: rgba(251, 255, 0, 0.8);
+        }
+
+        .co6:hover {
+            background-color: rgba(255, 0, 0, 0.8);
+        }
+
+        #tmt-logo {
+            width: 80px; /* Set the width to make it smaller */
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <h1 class="cot">Exploring East Village</h1>
+        <img id="tmt-logo" src="tmt.png" alt="TMT Logo">
+    </div>
+    <div id="star-container2">
+        <h1 class="co co2">Electric Circus</h1>
+        <h1 class="co co3">Club 57</h1>
+        <h1 class="co co4">Physical Graffiti</h1>
+        <h1 class="co co5">Basquiat's Studio</h1>
+        <h1 class="co co6">CBGB'S</h1>
+    </div>
+</body>
+</html>
